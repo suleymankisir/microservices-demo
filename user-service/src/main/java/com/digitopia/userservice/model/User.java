@@ -37,13 +37,4 @@ public class User extends BaseEntity {
         this.role = role;
         this.status = status;
     }
-
-    @Builder(builderMethodName = "userBuilder")
-    public User(String fullName, String email, String normalizedName, Role role, Status status) {
-        this.fullName = fullName;
-        this.email = email;
-        this.normalizedName = normalizedName;
-        this.role = role;
-        this.status = status;
-    }
 }
